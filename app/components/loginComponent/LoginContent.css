@@ -1,0 +1,207 @@
+button, input, a {
+  font-family: "Commissioner-Regular", sans-serif;
+}
+
+.close-button {
+  justify-content: end;
+  margin-left: 90%;
+  margin-bottom: -15px;
+}
+
+.login-via-google-button {
+  background-color: white;
+  color: rgb(5, 0, 71);
+  border: 3px solid rgb(5, 0, 71);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 90%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  align-items: center;
+}
+
+.login-via-google-button:hover {
+  transition: 0.5s;
+  box-shadow: 7px 5px 10px rgba(5, 0, 71, 0.5);
+}
+
+.divider {
+  border-top: 3px solid rgb(5, 0, 71);
+  border-radius: 20px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+.login-signup-toggle-container {
+  text-align: left;
+  margin-left: 5%;
+}
+
+.login-toggle, .signup-toggle, .login-toggle-off, .signup-toggle-off {
+  /*this allows it to be drawn over the email input*/
+  position: relative;
+  z-index: 2;
+  border-radius: 12px 12px 0px 0px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-bottom: -6px;
+  margin-right: 7px;
+  color: rgb(5, 0, 71);
+  font-size: 16px;
+}
+
+.login-toggle, .signup-toggle {
+  border: 3px solid rgb(5, 0, 71);
+  background-color: white;
+  border-bottom: none;
+}
+
+.login-toggle-off, .signup-toggle-off {
+  border: 3px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.login-toggle::after, .signup-toggle::after, .signup-toggle::before { /*rounded tabs*/
+  content: "";
+  bottom: 0px;
+  position: absolute;
+  width:7px;
+  height:7px;
+  background-color: white;
+  /*rounded corner*/
+  border-bottom: 3px solid rgb(5, 0, 71); 
+  border-color: rgb(5, 0, 71);
+}
+
+.login-toggle::after, .signup-toggle::after { 
+  right: -10px;
+  /*rounded corner*/
+  border-bottom-left-radius: 10px;
+  border-left: 3px solid rgb(5, 0, 71);
+  box-shadow: -5px 0px white, 0px 5px white, -5px 5px white;
+}
+
+.signup-toggle::before {
+  left: -10px;
+  border-bottom-right-radius: 10px;
+  border-right: 3px solid rgb(5, 0, 71);
+  box-shadow: 5px 0px white, 0px 5px white, 5px 5px white;
+}
+
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+.email-input-login:focus, .email-input-signup:focus, .password-input:focus{
+  outline: none;
+}
+
+.email-input-login:focus, .email-input-signup:focus, .password-input-container:focus-within {
+  box-shadow: 7px 5px 10px rgba(5, 0, 71, 0.5);
+}
+
+input::placeholder {
+  color: rgba(5, 0, 71, 0.5);
+}
+
+.email-input-login, .email-input-signup, .submit-button, .password-input-container, .button{
+  z-index: 1;
+  box-sizing: border-box; /*Normally, input's box-sizing is set to content-box, so the width won't match buttons with the same value, which by default are set to border-box*/
+  border: 3px solid rgb(5, 0, 71);
+  padding: 10px;
+  margin-bottom: 7px;
+  width: 90%;
+  height: 50px;
+  font-size: 13px;
+  
+}
+
+.email-input-login {
+  border-radius: 0px 12px 5px 5px; /*top left, top right, bottom right, bottom left*/
+}
+
+.email-input-signup {
+  border-radius: 12px 12px 5px 5px;
+}
+
+.password-input-container{
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.password-input {
+  border: none;
+  width: 85%;
+  height: 40px;
+  background-color: white;
+  font-size: 13px;
+}
+
+.submit-button {
+  display: inline-block; /*helps with alignment of the arrow*/
+  background-color: rgb(5, 0, 71);
+  position: relative;
+  text-align: center;
+  color: white;
+  border-radius: 5px 5px 12px 12px; 
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+.submit-button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit-button span:after {
+  content: ""; /*to make sure the background image shows up*/
+  display: inline-block;
+  background-image: url("../../../public/images/icons/arrow-right-bold.svg");
+  background-size: 20px 20px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -20px; /*allows the arrow to slide in from the right during the transition*/
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.submit-button:hover span {
+  padding-right: 25px;
+}
+
+.submit-button:hover span:after {
+  opacity: 1;
+  right: 0; /*allows the arrow to slide in from the right during the transition*/
+}
+
+.submit-button:hover {
+  border: 5px;
+  box-shadow: 25px 15px 50px rgb(132, 0, 255) inset, -10px -25px 50px rgb(255, 0, 153) inset;
+}
+
+.forgot-password-link {
+  font-size: 16px;
+  color: rgb(33, 99, 255);
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+} 
