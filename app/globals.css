@@ -2,3 +2,8 @@
   font-family: "Commissioner-Regular";
   src: url("../public/fonts/Commissioner/static/Commissioner-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Belleza";
+  src: url("../public/fonts/Belleza/Belleza-Regular.ttf");
+}

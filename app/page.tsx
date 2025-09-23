@@ -1,21 +1,29 @@
 "use client";
 import Rive from '@rive-app/react-canvas';
-import { Login } from './components/loginComponent/Login';
+import { LandingPageHeader } from "./components/landingPage/LandingPageHeader";
+import { ContentOne } from "./components/landingPage/ContentOne";
 import { useState } from "react";
-import "./page.module.css";
+import styles from "./page.module.css";
 
-export default function Home() {
+export const Simple = () => (
+  <Rive
+    src="https://cdn.rive.app/animations/vehicles.riv"
+  />
+);
+
+export default function LandingPage() {
   const [loginOpen, setLoginOpen] = useState(false);
   return (
     <>
-      <header className="header">
-        Landing Page Header
-        <button
-          onClick={() => {setLoginOpen(true)}}>
-            Get Started
-        </button>
-      </header>
-      {loginOpen && <Login loginOpen={loginOpen} setLoginOpen={setLoginOpen}/>}
+      <div className={loginOpen ? styles.contentLogin : styles.content}>
+        <LandingPageHeader />
+          <ContentOne 
+            loginOpen={loginOpen}
+            setLoginOpen={setLoginOpen}/>
+          <ContentOne 
+            loginOpen={loginOpen}
+            setLoginOpen={setLoginOpen}/>
+      </div>
     </>
   );
 }

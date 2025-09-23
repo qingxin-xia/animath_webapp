@@ -1,15 +1,20 @@
 .login-container {
+  z-index: 3;
   align-items: center;
+  background-color: white;
   justify-content: center;
   text-align: center; /*centers the forgot password link*/
-  gap: 8px;
   padding: 8px;
-  margin: 16px;
-  margin-right: auto;
-  margin-left: auto;
+  top: 50px;
+
+  left: 50%; /*horizontally centers the container for a div with a fixed position*/
+  transform: translateX(-50%);
+
   border-radius: 20px;
   font-size : 18px;
   border: 3px solid rgb(5, 0, 71);
   width: 350px;
   height: 400px;
+  position: fixed;
+  box-shadow: 0 0 100vh rgb(5, 0, 71);
 }

@@ -23,12 +23,12 @@ button, input, a {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  transition: all 0.5s;
+  transition: all 0.3s;
   align-items: center;
 }
 
 .login-via-google-button:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   box-shadow: 7px 5px 10px rgba(5, 0, 71, 0.5);
 }
 
@@ -184,6 +184,7 @@ input::placeholder {
 }
 
 .submit-button:hover span {
+  text-shadow: 0 0 10px rgb(0, 255, 251);
   padding-right: 25px;
 }
 
@@ -194,7 +195,7 @@ input::placeholder {
 
 .submit-button:hover {
   border: 5px;
-  box-shadow: 25px 15px 50px rgb(132, 0, 255) inset, -10px -25px 50px rgb(255, 0, 153) inset;
+  box-shadow: 25px 15px 50px rgb(119, 0, 255) inset, -10px -25px 50px rgb(208, 0, 255) inset;
 }
 
 .forgot-password-link {

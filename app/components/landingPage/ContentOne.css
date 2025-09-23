@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /*wraps when space is limited*/
+  font-family: "Belleza", garamond, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(5, 0, 71);
+  height: 100vh;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rubbing-face-rive {
+  flex: 1; /*both components take up equal space*/
+  min-width: 300px; /*min width before wrapping*/
+  height: 500px;
+  width: 500px;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  display: block;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+.welcome-message {
+  margin-top: 0px;
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+
+.get-started-button {
+  font-size: 16px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: #7F10FF;
+  transition: all 0.4s;
+}
+
+.get-started-button:hover {
+  font-size: 18px;
+  padding: 12px 22px;
+  transition: 0.4s;
+  box-shadow: 5px 10px 20px #661bfc inset, -15px -10px 30px #cb1bfc inset, -25px 0px 40px #fc1b5e inset;
+  text-shadow: 0 0 15px rgb(0, 255, 229);
+}
+
+@media (max-width: 700px) { /*stack vertically with limited space*/
+  .rubbing-face-rive {
+    margin-top: 15vh;
+    flex: 0 1 auto; /*allow first div to shrink*/
+    width: 100vh;
+    height: 45vh;
+  }
+
+  .text {
+    flex: 1; /*second div takes remaining space*/
+    width: 100vh;
+    height: 40vh;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .welcome-message {
+    font-size: 45px;
+  }
+}
