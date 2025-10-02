@@ -62,7 +62,7 @@ body {
     margin-top: 15vh;
     flex: 0 1 auto; /*allow first div to shrink*/
     width: 100vh;
-    height: 45vh;
+    height: calc(60vh - 75px);
   }
 
   .text {

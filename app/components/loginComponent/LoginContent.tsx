@@ -1,6 +1,7 @@
 "use client";
 import { GoogleLogoIcon, EyeIcon, EyeClosedIcon } from "@phosphor-icons/react";
 import { useState } from 'react';
+import Link from "next/link"
 import './LoginContent.css';
 
 export function LoginContent() {
@@ -61,12 +62,17 @@ export function LoginContent() {
 
   
         {login ? 
-          <button className='submit-button'>
-            <span>Login </span>
-            </button> 
-          : <button className="submit-button" >
-            <span>Sign Up </span>
-            </button>
+        // TODO: this is temporary, add in necessary authentication for login and signup
+          <Link 
+            className='submit-button'
+            href="/home">
+              <span>Login </span>
+            </Link> 
+          : <Link 
+            className="submit-button" 
+            href="home">
+              <span>Sign Up </span>
+            </Link>
         }
         <br />
         <a className="forgot-password-link" href="../">Forgot Password?</a>

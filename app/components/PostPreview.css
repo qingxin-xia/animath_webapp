@@ -1,0 +1,50 @@
+.content {
+  display: block;
+  width: 350px;
+  margin: 20px;
+  color: #050047;
+  font-family: "Commissioner-Regular", sans-serif;
+}
+.preview-image {
+  box-sizing: border-box;
+  border: 3px solid #050047;
+  border-radius: 15px;
+  height: 250px;
+  width: 350px;
+  margin-bottom: 0px;
+}
+
+.description, .info, .likes {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.description {
+  margin-top: -10px; /*TODO: see if there's a better way to style this*/
+}
+
+.profile-picture {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid #050047;
+  margin-right: 5px;
+}
+
+.username {
+  font-size: 14px;
+  width: 75%;
+}
+
+.username span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.heart-image {
+  height: 24px;
+  width: 24px;
+  margin: 2px;
+}

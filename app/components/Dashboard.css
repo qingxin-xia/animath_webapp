@@ -1,9 +1,63 @@
-.selection {
+body {
+  margin: 0px;
+}
+
+.sidebar {
+  z-index: 2;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+}
+
+.profile, .profile-current {
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 0px 7px 7px 0px;
+  background-color: rgb(227, 225, 254);
+}
+
+.block {
+  height: 150px;
+  border-radius: 0px 7px 7px 0px;
+  background-color: rgb(227, 225, 254);
+}
+
+.block-last {
+  border-radius: 0px 7px 0px 0px;
+  background-color: rgb(227, 225, 254);
+  height: calc(100vh - 216px); /*TODO: see if there's a better way for a div to take up the remaining height*/
+}
+
+.selection, .profile, .profile-current,
+.home, .community, .groups, .create, .projects, .collections, .trash {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px;
-  border-radius: 4px;
+  gap: 5px;
+  padding: 8px 10px;
   cursor: pointer;
-  font-size : 18px;
+  text-decoration: none;
+  color: rgb(5, 0, 71);
+  font-family: "Commissioner-Regular", "Belleza", sans-serif;
+}
+
+.selection, 
+.home, .community, .groups, .create, .projects, .collections, .trash{
+  margin-top: 3px;
+  border-radius: 7px;
+  font-size : 15px;
+}
+
+.selection:hover, 
+.home, .community, .groups, .create, .projects, .collections, .trash {
+  background-color: rgba(5, 0, 71, 0.1);
+}
+
+.profile:hover, .profile-current {
+  background-color: #cccaec;
+}
+
+.down-caret {
+  width: 12px;
+  opacity: 70%;
 }

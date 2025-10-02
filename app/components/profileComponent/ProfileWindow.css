@@ -1,0 +1,15 @@
+.profile-container {
+  z-index: 3;
+  background-color: rgb(5, 0, 71);
+  justify-content: center;
+  top: 55px;
+  left: 35px;
+
+  border-radius: 15px;
+  font-size : 18px;
+  width: 220px;
+  height: 330px;
+  position: fixed;
+  color: rgb(227, 225, 254);
+  font-family: "Commissioner-Regular", "Belleza", sans-serif;
+}

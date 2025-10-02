@@ -1,0 +1,56 @@
+.close-button {
+  justify-content: end;
+  margin-left: 85%;
+  margin-bottom: -15px;
+}
+
+.profile-info-picture, .profile-info-username, .profile-info-email {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(227, 225, 254);
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: all 0.25s;
+}
+
+.profile-info-username:hover {
+  text-decoration: underline;
+  transition: 0.25s;
+  text-shadow: 0px 0px 20px rgb(109, 240, 255)
+}
+
+.profile-info-email {
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 7px;
+  font-size: 15px;
+  margin-left: 10%;
+  margin: 10px 10%;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(227, 225, 254);
+}
+
+.option:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.divider {
+  border-top: 2px solid rgb(173, 167, 255);
+  border-radius: 20px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}

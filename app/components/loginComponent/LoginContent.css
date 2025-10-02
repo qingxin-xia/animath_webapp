@@ -184,16 +184,20 @@ input::placeholder {
 }
 
 .submit-button:hover span {
+  display: inline-block;
   text-shadow: 0 0 10px rgb(0, 255, 251);
   padding-right: 25px;
 }
 
 .submit-button:hover span:after {
+  display: inline-block;
   opacity: 1;
   right: 0; /*allows the arrow to slide in from the right during the transition*/
 }
 
 .submit-button:hover {
+  align-items: center;
+  display: inline-block;
   border: 5px;
   box-shadow: 25px 15px 50px rgb(119, 0, 255) inset, -10px -25px 50px rgb(208, 0, 255) inset;
 }
